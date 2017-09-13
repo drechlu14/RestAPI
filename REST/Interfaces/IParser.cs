@@ -13,5 +13,6 @@ namespace REST.Interfaces
     interface IParser
     {
         Task<T> ParseStringAsync<T>(string response);
+        Task<T> ParseStringAsync<T>(object content);
     }
 }

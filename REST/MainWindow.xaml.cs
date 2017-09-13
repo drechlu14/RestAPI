@@ -69,6 +69,7 @@ namespace REST
         /// <returns></returns>
         private async Task GetPersonListAndPopulateAsync()
        {
+
             await Task.Run(() =>
             {
                 Console.WriteLine(Thread.CurrentThread.IsBackground);
@@ -84,6 +85,8 @@ namespace REST
                     {
                         ChangeStatusMessage("OK");
                         SetPersonsItemSource(pl);
+
+
                     });
                 }
                 else
