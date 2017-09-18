@@ -10,7 +10,7 @@ namespace REST.Interfaces
 {
     interface IWebClient
     {
-       Task< List<Person> > GetPersonsListAsync();
+        Task<List<Person>> GetPersonsListAsync();
 
 
     }

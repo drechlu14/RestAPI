@@ -22,5 +22,9 @@ namespace REST
             return await Task.Factory.StartNew(() => JsonConvert.DeserializeObject<T>(response));
        }
 
+        public Task<T> ParseStringAsync<T>(object content)
+        {
+            throw new NotImplementedException();
+        }
     }
 }

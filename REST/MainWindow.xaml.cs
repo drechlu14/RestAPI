@@ -78,7 +78,7 @@ namespace REST
                 List<Person> persons = webClient.GetPersonsListAsync().Result;
 
                 if (persons != null && persons.Count != 0)
-                {
+                {   
                     ObservableCollection<Person> pl = new ObservableCollection<Person>(persons);
 
                     this.Dispatcher.InvokeAsync(() =>
